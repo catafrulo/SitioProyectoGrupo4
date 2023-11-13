@@ -1,0 +1,6 @@
+
+.video{
+    display: grid;
+    place-content: center;
+    margin: auto;
+}
