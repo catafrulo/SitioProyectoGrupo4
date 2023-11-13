@@ -1,0 +1,14 @@
+.map{
+    display: flex;
+    place-content: center;
+    margin: auto;
+    margin-top: 5vh;
+    flex-direction: column;
+    width: 70%;
+    height: 75vh;
+}
+
+.mapa{
+    height: 100%;
+    width: auto;
+}
