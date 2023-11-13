@@ -1,6 +1,29 @@
 
+body{
+    background-image: url(../sources/cuidaPlantas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    background-color: #654321 ;
+    justify-content: space-between;
+}
+
+
 .video{
     display: grid;
     place-content: center;
     margin: auto;
+}
+.contenido{      width: 60%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.Logo{
+    max-width: 30px;
+    max-height: 30px;
 }
