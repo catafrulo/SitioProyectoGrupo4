@@ -1,12 +1,55 @@
-
-body{
-    background-image: url(../sources/cuidaPlantas.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
 }
+
+
+
 .navbar{
     background-color: #654321 ;
     justify-content: space-between;
+}
+
+.main-content{
+    background-image: url(../sources/cuidaPlantas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+}
+
+.contenido1{    
+    width: 40%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    color: black;
+    margin-top: 5vh;
+    margin-left: 80vh;
+}
+.contenido1 p{
+    margin-top: 0;
+}
+
+
+.contenido2{
+    background-color:#87CEEB ;
+    min-height: 20vh;
+    text-align: center;
+}
+.contenido2 h5, p{
+    vertical-align: middle;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 7vh;
+}
+
+.Logo{
+    max-width: 30px;
+    max-height: 30px;
 }
 
 
@@ -14,16 +57,4 @@ body{
     display: grid;
     place-content: center;
     margin: auto;
-}
-.contenido{      width: 60%;
-    margin: 50px auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    color: black;
-}
-
-.Logo{
-    max-width: 30px;
-    max-height: 30px;
 }
