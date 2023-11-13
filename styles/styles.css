@@ -26,17 +26,17 @@ body {
     background-color: white;
     padding: 10px;
     border-radius: 25px;
-    color: black;
     margin-top: 5vh;
     margin-left: 80vh;
 }
 .contenido1 p{
     margin-top: 0;
+    color: black;
 }
 
 
 .contenido2{
-    background-color:#87CEEB ;
+    background-color:#25bdae ;
     min-height: 20vh;
     text-align: center;
 }
@@ -45,6 +45,7 @@ body {
     align-items: center;
     margin-bottom: 0;
     margin-top: 7vh;
+    color: white;
 }
 
 .Logo{
@@ -60,15 +61,13 @@ body {
     flex-direction: column;
 }
 
-.contenido{      width: 60%;
-    margin: 50px auto;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    color: black;
-}
 
-.Logo{
-    max-width: 30px;
-    max-height: 30px;
-}
+
+
+@media all and (max-width: 700px) {
+    .contenido1{
+        width: 80%;
+        margin-left: 5vh;
+
+    }
+} 
