@@ -9,12 +9,13 @@ body{
     justify-content: space-between;
 }
 
-
 .video{
     display: grid;
     place-content: center;
     margin: auto;
+    flex-direction: column;
 }
+
 .contenido{      width: 60%;
     margin: 50px auto;
     background-color: white;
