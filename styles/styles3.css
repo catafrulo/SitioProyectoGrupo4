@@ -1,4 +1,4 @@
-.map{
+.map {
     display: flex;
     place-content: center;
     margin: auto;
@@ -8,7 +8,48 @@
     height: 75vh;
 }
 
-.mapa{
+.mapa {
     height: 100%;
     width: auto;
+}
+
+.mapb {
+    display: flex;
+    place-content: center;
+    margin: 1rem;
+    flex-direction: column;
+    width: 70%;
+    height: 75vh;
+}
+
+.mapab {
+    height: 100%;
+    width: auto;
+}
+
+.cal {
+    display: flex;
+    place-content: center;
+    margin: auto;
+    margin-top: 5vh;
+    flex-direction: column;
+    width: 70%;
+    height: 75vh;
+}
+
+.calendar {
+    height: 100%;
+    width: auto;
+}
+
+.ref{
+    margin-top: 1rem;
+}
+
+.contenedorSymBici{
+    margin: auto;
+}
+
+.contenedorMapaBici{
+    padding: 0;
 }
