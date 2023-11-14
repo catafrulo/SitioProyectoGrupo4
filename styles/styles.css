@@ -6,6 +6,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.row{
+    --bs-gutter-x: 0rem;
+}
+
 .navbar {
     background-color: #654321;
     justify-content: space-between;
@@ -16,31 +20,37 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     min-height: 70vh;
 }
 
-.contenido1 {
+.principal {
     width: 40%;
     background-color: white;
     padding: 10px;
     border-radius: 25px;
-    margin-top: 5vh;
-    margin-left: 80vh;
+    margin-left: 85vh;
+    text-align: center;
 }
 
-.contenido1 p {
+.principal p {
+    text-align: justify;
     margin-top: 0;
     color: black;
 }
 
 
-.contenido2 {
+.secundario {
     background-color: #25bdae;
     min-height: 20vh;
     text-align: center;
 }
 
-.contenido2 h5,
+.secundario h5,
 p {
     vertical-align: middle;
     align-items: center;
@@ -49,9 +59,11 @@ p {
     color: white;
 }
 
-.Logo {
-    max-width: 30px;
-    max-height: 30px;
+.Logo-SobreNosotros {
+    width: 10rem;
+    margin-top:2rem;
+    margin-bottom: 1rem;
+    margin: auto;
 }
 
 
@@ -148,12 +160,25 @@ p {
 
 /* +++++++++++++++ FIN FORM CONTACTO +++++++++++++++ */
 
+/* +++++++++++++++ FOOTER +++++++++++++++ */
+
+
+/* +++++++++++++++ FIN FOOTER +++++++++++++++ */
+
+
+@media all and (max-width: 1250px) {
+    .principal {
+        margin-left: 20vh;
+        width: 60%;
+    }
+}
+
+
 @media all and (max-width: 991px) {
-    .contenido1 {
+    .principal {
         width: 80%;
         margin-left: 5vh;
     }
-
     .contactoFoto {
         display: none;
     }
