@@ -2,11 +2,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
-
-
 
 .navbar {
     background-color: #654321;
@@ -64,12 +62,32 @@ p {
     flex-direction: column;
 }
 
+.contactoFoto {
+    width: 35rem;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    padding-top: 2rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorflex {
+    display: flex;
+    /*    justify-content: space-around;*/
+    align-items: center;
+    justify-content: center;
+    padding: 4.5vh;
+}
+
 /* +++++++++++++++ INICIO FORM CONTACTO +++++++++++++++ */
 .formulario {
     /*  Formato general */
-    width: 70%;
+    margin-top: 5rem;
+    width: 100%;
     max-width: 100%;
-    margin: auto;
+    margin-left: 5rem;
     padding: 20px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -135,10 +153,17 @@ p {
 
 /* +++++++++++++++ FIN FOOTER +++++++++++++++ */
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 991px) {
     .contenido1 {
         width: 80%;
         margin-left: 5vh;
+    }
 
+    .contactoFoto {
+        display: none;
+    }
+
+    .formulario {
+        margin: auto;
     }
 }
