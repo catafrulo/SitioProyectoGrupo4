@@ -1,0 +1,31 @@
+
+.footer {
+    width: 100%;
+    padding-left: 1vh;
+}
+
+.contenidoFooter{
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;
+}
+
+.footer2{
+    max-width: 40%;
+}
+
+.DERECHOS{
+    display: grid;
+    place-content: center;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 40px;
+    text-decoration-color: white;
+    background-color: rgb(41, 36, 36);
+}
+
+.derechos p{
+    color: whitesmoke;
+}
