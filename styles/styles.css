@@ -171,6 +171,17 @@ p {
 .parrafo h2{
     text-align: center;
 }
+.parrafo p{
+    margin-top: 0;
+    color: white;
+}
+
+.img-taller{
+    max-width: 25rem;
+    border: 4px solid grey;
+    margin-bottom: 2rem;
+}
+
 
 /* +++++++++++++++ FOOTER +++++++++++++++ */
 
