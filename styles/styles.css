@@ -160,6 +160,18 @@ p {
 
 /* +++++++++++++++ FIN FORM CONTACTO +++++++++++++++ */
 
+/* +++++++++++++++ INICIO CURSOS +++++++++++++++ */
+
+.parrafo{
+    text-align: justify;
+    margin-left: 2rem;
+    margin-top: 0;
+    margin-right: 2rem;
+}
+.parrafo h2{
+    text-align: center;
+}
+
 /* +++++++++++++++ FOOTER +++++++++++++++ */
 
 
