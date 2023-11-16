@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
@@ -50,8 +50,7 @@ body {
     text-align: center;
 }
 
-.secundario h5,
-p {
+.secundario h5,p {
     vertical-align: middle;
     align-items: center;
     margin-bottom: 0;
