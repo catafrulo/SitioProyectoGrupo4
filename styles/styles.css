@@ -34,7 +34,7 @@ body {
     padding: 10px;
     border-radius: 25px;
     margin-left: 85vh;
-    text-align: center;
+    text-align: justify;
 }
 
 .principal p {
@@ -60,10 +60,9 @@ p {
 }
 
 .Logo-SobreNosotros {
-    width: 10rem;
-    margin-top:2rem;
-    margin-bottom: 1rem;
-    margin: auto;
+    width: 8rem;
+    justify-content: flex-start;
+    display: flex;
 }
 
 
@@ -162,25 +161,63 @@ p {
 
 /* +++++++++++++++ INICIO CURSOS +++++++++++++++ */
 
-.parrafo{
+.parrafo-cursos{
     text-align: justify;
     margin-left: 2rem;
     margin-top: 0;
     margin-right: 2rem;
 }
-.parrafo h2{
+
+.parrafo-cursos h2{
     text-align: center;
 }
-.parrafo p{
+
+.parrafo-cursos p{
     margin-top: 0;
     color: white;
 }
 
+.parrafo-cursos h5{
+    margin-top: 0;
+}
+
 .img-taller{
-    max-width: 25rem;
-    border: 4px solid grey;
+    max-width: 15rem;
+    max-height: 10rem;
+    border: 6px solid grey;
     margin-bottom: 2rem;
 }
+
+#formulario {
+    display: none;
+    background-image: url(../sources/fondo-hojas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border:2px solid #212529 ;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+#contenido {
+    display: none;
+}
+
+
+#parrafo-taller {
+    display: none; ;
+    padding: 20px;
+}
+
+/* +++++++++++++++ FIN CURSOS +++++++++++++++ */
+
+/* +++++++++++++++ Inicio SObre Nosotros +++++++++++++++ */
+.parrafo-sobre-nosotros{
+    text-align: center;
+    align-items: center;
+}
+
+
 
 
 /* +++++++++++++++ FOOTER +++++++++++++++ */

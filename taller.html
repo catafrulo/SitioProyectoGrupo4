@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inscripción al Curso</title>
+  <style>
+    /* Estilo para ocultar inicialmente el formulario */
+    #formulario {
+      display: none;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Botón para mostrar o esconder el formulario -->
+<button onclick="alternarFormulario()">Mostrar Formulario</button>
+
+<!-- Formulario -->
+<div class="col-md-5">
+  <div id="formulario">
+    <h3>Formulario de Inscripción</h3>
+    <form action="#" method="post" onsubmit="mostrarVentanaEmergente(event)">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      
+      <label for="apellido">Apellido:</label><br>
+      <input type="text" id="apellido" name="apellido" required><br><br>
+      
+      <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+      
+      <label for="correo">Correo Electrónico:</label><br>
+      <input type="email" id="correo" name="correo" required><br><br>
+      
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</div>
+
+<script>
+var formularioVisible = false;
+
+// Función para alternar la visibilidad del formulario
+function alternarFormulario() {
+  var formulario = document.getElementById("formulario");
+  formulario.style.display = formularioVisible ? "none" : "block";
+  formularioVisible = !formularioVisible;
+}
+
+// Función para mostrar una ventana emergente al enviar el formulario
+function mostrarVentanaEmergente(event) {
+  event.preventDefault(); // Prevenir el envío del formulario por defecto
+  
+  // Texto del mensaje en la ventana emergente
+  var mensaje = `¡Felicidades! Te has inscrito al curso correctamente.`;
+
+  // Crear una ventana emergente con dos botones
+  var ventanaEmergente = window.open('', '_blank', 'width=400,height=200');
+  
+  // Agregar contenido HTML a la ventana emergente
+  ventanaEmergente.document.write(`
+    <html>
+    <head><title>Confirmación de Inscripción</title></head>
+    <body>
+      <p>${mensaje}</p>
+      <button onclick="mostrarMensaje()">Aceptar</button>
+      <button onclick="cerrarVentana()">Salir</button>
+      <script>
+        // Función para mostrar el mensaje de confirmación al hacer clic en Aceptar
+        function mostrarMensaje() {
+          alert('¡Te has inscrito al curso correctamente!');
+        }
+
+        // Función para cerrar la ventana emergente al hacer clic en Salir
+        function cerrarVentana() {
+          window.close();
+        }
+      </script>
+    </body>
+    </html>
+  `);
+
+  ventanaEmergente.document.close(); // Cerrar el documento abierto para evitar errores
+}
+</script>
+
+</body>
+</html>
