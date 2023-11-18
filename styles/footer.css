@@ -35,15 +35,6 @@
     place-content: center;
 }
 
-.derechos p{
-    display: grid;
-    place-content: center;
-    align-items: center;
-    padding: 0;
-    color: black;
-    margin-top: 0;
-}
-
 
 .logoUade{
     width: 60%;
