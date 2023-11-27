@@ -91,6 +91,15 @@ body {
     padding: 4.5vh;
 }
 
+.main-video {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-left: 25rem;
+    margin-bottom: 5rem;
+}
+
 /* +++++++++++++++ INICIO FORM CONTACTO +++++++++++++++ */
 .formulario {
     /*  Formato general */
